@@ -152,41 +152,41 @@ Problems connecting to RP?
        *   you have correctly inserted the Red Pitaya SD card and the Red Pitaya OS has been installed (Notice that Red Pitayas already comes with a pre-installed OS on SD cards. Anyhow, SD cards might get corrupted- in such case follow this instruction on how to :ref:`Prepare SD card <prepareSD>` to properly re-install Red Pitaya OS to SD card)
        *   try to use another SD card
 
-*  Test1
+*  test1
 
-*   Test2
+*   test2
 
-*    Test3
+*    test3
 
- *  Test4
+ *  test4
 
- *   Test5
+ *   test5
 
- *    Test6
+ *    test6
 
-  *  Test7
+  *  test7
 
-  *   Test8
+  *   test8
 
-  *    Test9
+  *    test9
 
-   *  Test10
+   *  test10
 
-   *   Test11
+   *   test11
 
-   *    Test12
+   *    test12
 
-    *  Test13
+    *  test13
 
-    *   Test14
+    *   test14
 
-    *    Test15
+    *    test15
 
-     *  Test16
+     *  test16
 
-     *   Test17
+     *   test17
 
-     *    Test18
+     *    test18
  
 
 
