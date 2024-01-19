@@ -6,11 +6,11 @@
 # Packages that need to be installed (update the versions from time to time)
 sphinx
 
-sphinx_rtd_theme>=0.5.2
+sphinx_rtd_theme>=1.3.0
 sphinx-tabs>=3.0.0
-docutils
+docutils>=0.18.1
 
-#docutils<0.17    # bullet point problem with higher versions
+# docutils<0.17    # bullet point problem with this version
 
 #### Python packages ####
 pillow
