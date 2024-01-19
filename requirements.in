@@ -1,2 +1,5 @@
 # Update the versions from time-to-time
 # Sphinx (pin version)
+
+sphinx > 7.2
+sphinx-rtd-theme >= 1.3
