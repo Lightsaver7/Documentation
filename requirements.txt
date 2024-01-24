@@ -14,7 +14,7 @@ charset-normalizer==3.3.2
     # via requests
 colorama==0.4.6
     # via sphinx
-docutils==0.17.1
+docutils==0.16
     # via
     #   -r requirements.in
     #   sphinx
