@@ -152,44 +152,6 @@ Problems connecting to RP?
        *   you have correctly inserted the Red Pitaya SD card and the Red Pitaya OS has been installed (Notice that Red Pitayas already comes with a pre-installed OS on SD cards. Anyhow, SD cards might get corrupted- in such case follow this instruction on how to :ref:`Prepare SD card <prepareSD>` to properly re-install Red Pitaya OS to SD card)
        *   try to use another SD card
 
-*  test1
-
-*   test2
-
-*    test3
-
- *  test4
-
- *   test5
-
- *    test6
-
-  *  test7
-
-  *   test8
-
-  *    test9
-
-   *  test10
-
-   *   test11
-
-   *    test12
-
-    *  test13
-
-    *   test14
-
-    *    test15
-
-     *  test16
-
-     *   test17
-
-     *    test18
- 
-
-
    #. If both the **green** and **blue** LEDs are **ON**, but the **red** and **orange** LEDs are **not blinking**. The red LED indicates CPU heartbeat, while the orange LED indicates access to the SD card. Notice that these two LEDs always start blinking 10 seconds after the green and blue LEDs are turned on.
 
 #. Make sure your Red Pitaya and computer are both connected to the same :ref:`local network <faqConnected>`.
