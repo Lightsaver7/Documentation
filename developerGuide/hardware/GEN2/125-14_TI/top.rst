@@ -3,7 +3,7 @@
 .. _top_125_14_TI_gen2:
 
 #################################
-STEMlab 125-14 TItanum Gen 2
+STEMlab 125-14 TI Gen 2
 #################################
 
 .. note::
@@ -27,8 +27,11 @@ Features
 =============
 
 * Same frontend improvements as Gen 2 boards.
-* Low latency ADCs
-* Low jitter DAC clock.
+* TI ADC3664 14-bit, 125 MSps SAR ADC with high SNR, low latency, on-chip digital filtering & DDC  
+* TI DAC2904Y 14-bit, 125 MSps dual-channel DAC with low-latency, low-jitter outputs  
+* TI LMK03318 programmable ultra-low-jitter clock generator (5 ps RMS @ 40 MHz)  
+* Ultra-low RF output jitter: 5 ps RMS @ 40 MHz (vs. 20 ps on standard Gen 1 units)  
+
 
 
 
@@ -125,6 +128,8 @@ Technical specifications
     +------------------------------------+------------------------------------+
     | Bandwidth                          | DC - 60 MHz                        |
     +------------------------------------+------------------------------------+
+    | RF output jitter @ 40 MHz          | 5 ps                               |
+    +------------------------------------+------------------------------------+     
     | Connector type                     | SMA                                |
     +------------------------------------+------------------------------------+
     | |br|                                                                    |
@@ -563,7 +568,7 @@ For all other specifications and measurements please refer to the common |Gen 2 
 
 .. rubric:: Footnotes
 
-.. [#f1] See the :ref:`Click Shield synchronisation section <click_shield>` and :ref:`Click Shield synchronisation examples <examples_multiboard_sync>`.
+.. [#f1] See the :ref:`Click Shield synchronisation section <click_shield>` and :ref:`Click Shield synchronisation examples <multiboard_sync_examples>`.
 
 .. [#f2] The external ADC clock goes first to the `NB6L72`_ clock selector chip, then passes through the ADC to finally reach the FPGA pins.
 

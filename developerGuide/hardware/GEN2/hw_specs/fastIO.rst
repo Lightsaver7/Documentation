@@ -1,6 +1,4 @@
 
-.. _measurements_gen2:
-
 #######################
 Fast analog IO (Gen 2)
 #######################
@@ -35,7 +33,7 @@ Fast analog IO (Gen 2)
 Analog inputs
 *************************
 
-The measurements presented in this section have been perfomed on the *STEMlab 125-14 Pro Z7020 Gen 2* board. All STEMlab 125-14 Gen 2 boards have the same analog input specifications.
+The measurements presented in this section have been perfomed on the *STEMlab 125-14 Gen 2 Z7020 Pro* board. All STEMlab 125-14 Gen 2 boards have the same analog input specifications.
 
 
 General Specifications
@@ -114,7 +112,7 @@ If the jumpers are moved from an incorrect to a correct position, calibration is
     .. figure:: img/jumpers/Jumper_position_Note.png
 
 
-2. Once installed, the jumpers should be positioned so that the metal part is not visible. Please refer to the example of the STEMlab 125-14 4-Input in the pictures below for guidance.
+2. Once installed, the jumper should be positioned so that the metal part is not visible. Please refer to the example on the STEMlab 125-14 4 input for guidance.
 
     .. figure:: img/jumpers/Jumper_position_4IN_0.png
         :align: center
@@ -151,7 +149,7 @@ Fast analog inputs are **DC coupled**.
 .. TODO add input impedance measurements
 
 
-Input bandwidth
+Bandwidth
 ------------------
 
 +------------------------------------+------------------------------------+
@@ -173,10 +171,10 @@ Input bandwidth
     Bandwidth measurement of the input channel 1 in HV mode.
 
 
-Input bandwidth flatness
---------------------------
+Bandwidth flatness
+--------------------
 
-The bandwidth flatness is <0.05 dB from DC to full (-3 dB) bandwidth on LV gain setting.
+The bandwidth flatness is withing -1 dB from DC to full bandwidth (LV gain setting).
 
 .. figure:: img/measurements/RF_inputs/Bandwidth_flatness/IN1_LV_DEC1_flatness.jpg
     :width: 800
@@ -184,53 +182,13 @@ The bandwidth flatness is <0.05 dB from DC to full (-3 dB) bandwidth on LV gain 
     Bandwidth flatness measurement of the input channel 1 in LV mode.
 
 
-Input crosstalk
+Crosstalk
 ------------------
-
-Crosstalk measurements were performed between input channels 1 and 2 for both LV and HV modes.
-
-+------------------------------------+------------------+------------------+------------------+------------------+
-|                                    | **Up to 30 MHz**                    | **Above 30 MHz**                    |
-+------------------------------------+------------------+------------------+------------------+------------------+
-| |br|                               | |br|             | |br|             | |br|             | |br|             |
-| **IN1 \ IN2**                      | **LV**           | **HV**           | **LV**           | **HV**           |
-+------------------------------------+------------------+------------------+------------------+------------------+
-| **LV**                             | >70 dB           | >80 dB           | >50 dB           | >50 dB           |
-+------------------------------------+------------------+------------------+------------------+------------------+
-| **HV**                             | 40 dB            | 55 dB            | >35 dB           | >40 dB           |
-+------------------------------------+------------------+------------------+------------------+------------------+
-| |br|                               | |br|             | |br|             | |br|             | |br|             |
-| **IN2 \ IN1**                      | **LV**           | **HV**           | **LV**           | **HV**           |
-+------------------------------------+------------------+------------------+------------------+------------------+
-| **LV**                             | >70 dB           | 55 dB            | >55 dB           | 50 dB            |
-+------------------------------------+------------------+------------------+------------------+------------------+
-| **HV**                             | 70 dB            | 55 dB            | >55 dB           | 55 dB            |
-+------------------------------------+------------------+------------------+------------------+------------------+
-
-
 
 .. figure:: img/measurements/RF_inputs/Cross-talk/Cross_talk_IN1@HV_IN2@HV.jpg
     :width: 800
 
     Crosstalk measurements between input channels 1 and 2 in HV mode.
-
-
-Input SFDR
-------------------
-
-**Under construction**
-
-
-Input SNR
--------------------
-
-**Under construction**
-
-
-Input noise
--------------------
-
-**Under construction**
 
 
 
@@ -313,16 +271,10 @@ Output bandwidth
     Bandwidth measurement of the output channel 1 at high impedance load.
 
 
-Output bandwidth flatness
---------------------------
-
-The output bandwidth flattness is within -1 dB from DC to full (-3 dB) bandwidth.
-
-
 Output impedance
 ------------------
 
-The impedance of the output channels (output amplifier and filter) is shown in the figure below. STEMlab 125-14 (Gen 1) output impedance is shown for comparison.
+The impedance of the output channels (output amplifier and filter) is shown in the figure below. STEMlab 125-14 Gen 1 output impedance is shown for comparison.
 
 .. figure:: img/measurements/RF_outputs/Output_impedance/Output_impedance.png
     :width: 800
@@ -352,8 +304,8 @@ Output SFDR
 +------------------+-----------------+-----------------+
 |                  | **OUT 1**       | **OUT 2**       |
 +------------------+-----------------+-----------------+
-| **f [MHz]**      | **SFDR [dB]**   | **SFDR [dB]**   |
-+------------------+-----------------+-----------------+
+| f [MHz]          | SFDR [dB]       | SFDR [dB]       |
++==================+=================+=================+
 | 0.1              | 56              | 54              |
 +------------------+-----------------+-----------------+
 | 1                | 52              | 58              |
@@ -432,12 +384,6 @@ Analog output calibration
 
 
 
-
-.. substitutions
-
-.. |br| raw:: html
-
-    <br />
 
 
 .. rubric:: Footnotes
