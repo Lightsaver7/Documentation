@@ -149,10 +149,11 @@ background: white;
 .rst-content pre.literal-block, .rst-content div[class^='highlight'] pre, .rst-content .linenodiv pre {
     line-height: normal;
     font-family: 'Fira Mono', monospace;
+    font-size: 95%;
 }
 
 code, .rst-content tt, .rst-content code {
-    font-size: 90%;
+    font-size: 95%;
 }
 
 pre span {
@@ -173,3 +174,23 @@ pre span {
 .toctree-expand {
     visibility: hidden;
 }
+
+/* Reduce size of copy buttons */
+button.copybtn {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    padding: 0.2em !important;
+    font-size: 0.8em !important;
+    opacity: 0.3 !important;
+    transition: opacity 0.3s ease-in-out !important;
+}
+
+button.copybtn:hover {
+    opacity: 1 !important;
+}
+
+button.copybtn svg {
+    width: 1em !important;
+    height: 1em !important;
+}
+
