@@ -145,15 +145,14 @@ Acquisition Control
 | |                                   | | Python: ``rp_AcqResetFpga()``                                              |                                                                            |                    |
 | |                                   | |                                                                            |                                                                            |                    |
 +-------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------+--------------------+
-| | -                                 | | C++: ``rp_AcqSetArmKeep(bool enable)``                                     | Enable continous acquisition even after trigger has happened.              | 1.04-18 and up     |
-| |                                   | |                                                                            |                                                                            |                    |
-| |                                   | | Python: ``rp_AcqSetArmKeep(<enable>)``                                     |                                                                            |                    |
-| |                                   | |                                                                            |                                                                            |                    |
+| | ``ACQ:KEEP:ARM <state>``          | | C++: ``rp_AcqSetArmKeep(bool enable)``                                     | | Enable continuous acquisition even after trigger has happened.           | in dev             |
+| | Example:                          | |                                                                            | | When enabled, the buffer continues to fill after trigger                 |                    |
+| | ``ACQ:KEEP:ARM ON``               | | Python: ``rp_AcqSetArmKeep(<enable>)``                                     | | (ARM keep mode).                                                         |                    |
+| |                                   | |                                                                            | |                                                                          |                    |
 +-------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------+--------------------+
-| | -                                 | | C++: ``rp_AcqGetArmKeep(bool* state)``                                     | Get the status of continous acquisition after trigger setting.             | 1.04-18 and up     |
-| |                                   | |                                                                            |                                                                            |                    |
-| |                                   | | Python: ``rp_AcqGetArmKeep()``                                             |                                                                            |                    |
-| |                                   | |                                                                            |                                                                            |                    |
+| | ``ACQ:KEEP:ARM?`` > ``<state>``   | | C++: ``rp_AcqGetArmKeep(bool* state)``                                     | | Get the status of continuous acquisition after trigger setting.          | in dev             |
+| | Example:                          | |                                                                            | | Returns ``ON`` if arm keep mode is enabled.                              |                    |
+| | ``ACQ:KEEP:ARM?`` > ``ON``        | | Python: ``rp_AcqGetArmKeep()``                                             | |                                                                          |                    |
 +-------------------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------+--------------------+
 
 
