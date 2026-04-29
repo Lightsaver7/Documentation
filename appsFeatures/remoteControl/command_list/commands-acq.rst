@@ -381,6 +381,7 @@ Acquisition trigger
 - ``<decimated_data_num> = {value in samples}`` (minimum value ``-8192``) Default: ``0``
 - ``<time_ns> = {value in nS}`` Default: ``0``
 - ``<value> = {value in us}`` Default: ``500``
+- ``<pre_counter> = {0...4294967295}``
 - ``<voltage> = {value in V}`` Default: ``0``
 - ``<timeout_ms> = {timeout in milliseconds}`` (For disable timeout use: -1)
 
@@ -513,10 +514,14 @@ Acquisition trigger
 | |                                                           | |                                                                                    |                                                                               |                         |
 | |                                                           | |                                                                                    |                                                                               |                         |
 +-------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------+
-| | -                                                         | | C++: ``rp_AcqGetPreTriggerCounter(uint32_t* value)``                               | | Get the pretrigger sample count (how many samples are in the buffer before  | 1.04-18 and up          |
-| |                                                           | |                                                                                    | | the trigger position).                                                      |                         |
-| |                                                           | | Python: ``rp_AcqGetPreTriggerCounter()``                                           | |                                                                             |                         |
+| | ``ACQ:TRig:PRE:COUNTER?`` > ``<pre_counter>``             | | C++: ``rp_AcqGetPreTriggerCounter(uint32_t* value)``                               | | Returns the number of valid data points (samples) in the buffer             | in dev                  |
+| | Example:                                                  | |                                                                                    | | before the trigger position.                                                |                         |
+| | ``ACQ:TRig:PRE:COUNTER?`` > ``8192``                      | | Python: ``rp_AcqGetPreTriggerCounter()``                                           | |                                                                             |                         |
 | |                                                           | |                                                                                    | |                                                                             |                         |
++-------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------+
+| | ``ACQ:TRig:PRE:COUNTER:CH<n>?`` > ``<pre_counter>``       | | C++: ``rp_AcqGetPreTriggerCounterCh(rp_channel_t channel, uint32_t* value)``       | | Returns the number of valid data points (samples) in the buffer             | in dev                  |
+| | Example:                                                  | |                                                                                    | | before the trigger position for the specified channel.                      |                         |
+| | ``ACQ:TRig:PRE:COUNTER:CH1?`` > ``8192``                  | | Python: ``rp_AcqGetPreTriggerCounterCh(<channel>)``                                | | Used only in split trigger mode.                                            |                         |
 +-------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------------+
 | | ``ACQ:TRig:HYST <voltage>``                               | | C++: ``rp_AcqSetTriggerHyst(float voltage)``                                       | Set the trigger hysteresis threshold value in Volts.                          | 1.04-18 and up          |
 | | Example:                                                  | |                                                                                    |                                                                               |                         |
